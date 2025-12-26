@@ -6,7 +6,6 @@ import allure
 class ApiClient:
     def __init__(self):
         self.base_url = BASE_URL
-        self.session = requests.Session()
 
     @allure.step("Получение списка постов")
     def get_posts(self):
